@@ -9,6 +9,10 @@
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
 
     <style>
+        body {
+            background-color: rgb(214, 230, 240);
+        }
+
         .d1 {}
 
         .hh1 {
@@ -42,10 +46,52 @@
             overflow: auto;
         }
 
-        .d5{
-            border: solid 3px blue;
+        .d5 {
+            border: dotted 3px blue;
             overflow: auto;
         }
+
+        .im2 {
+            float: left;
+        }
+        
+        .d6{
+            border: solid 3px green;
+            margin: 0;
+            margin-right: 10px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            right: 0px;
+            float: left;
+        }
+
+        .d7{
+            border: solid 3px green;
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding: 10px;
+            right: 0px;
+            float: left;
+        }
+
+        .d8{
+            position: relative;
+            top: 150px;
+        }
+
+        .d8 > p:nth-child(2) {
+            color: red;
+        }
+
+        :root{
+            background-color: aquamarine;
+        }
+
+        
     </style>
 </head>
 
@@ -75,18 +121,41 @@
     </div> -->
 
     <div class="d4">
-        <p><img class="im1"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uYZwfzV-PoXKwLZXuGQg2XUMAJC8CthxPI9tV4avYVzKm7YbNSrWtngxAqKj1hBAk3o&usqp=CAU"
-                alt="">Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Deleniti, exercitationem.<br> Sit,
+        <img class="im1"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2uYZwfzV-PoXKwLZXuGQg2XUMAJC8CthxPI9tV4avYVzKm7YbNSrWtngxAqKj1hBAk3o&usqp=CAU"
+            alt="">
+        <p>Lorem ipsum dolor sit,<br> amet consectetur adipisicing elit. Deleniti, exercitationem.<br> Sit,
             sunt
             omnis voluptas, inventore cum officiis<br> fuga id explicabo earum tenetur ipsam pariatur esse<br> deleniti
             mollitia
-            obcaecati? Molestiae, vero.</p>
+            obcaecati? Molestiae, vero.
+        </p>
     </div>
 
-    <div class=".d5"><img
+    <div class="d5">
+        <img class="im2"
             src="data:image/jpeg;base64,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"
-            alt=""></div>
+            alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis corrupti eaque magnam sit numquam? At<br>
+            perferendis libero hic culpa? Veritatis perspiciatis reiciendis molestias adipisci consequuntur
+            recusandae<br>
+            error, et ipsum quia!</p>
+    </div>
+
+        <div class="d6">텍스트1</div>
+        <div class="d6">텍스트2</div>
+        <div class="d6">텍스트3</div>
+        <div class="d6">텍스트4</div>
+        <div class="d6">텍스트5</div>
+        <div class="d6">텍스트6</div>
+
+    <div class="d8">
+        <p>텍스트1</p>
+        <p>텍스트2</p>
+        <p>텍스트3</p>
+        <p>텍스트4</p>
+        <p>텍스트5</p>
+    </div>
 </body>
 
 </html>
